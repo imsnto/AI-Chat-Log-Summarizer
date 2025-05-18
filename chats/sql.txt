@@ -1,0 +1,15 @@
+User: Hi! Can you help me understand SQL?
+AI: Hi! SQL (Structured Query Language) is used to interact with databases. You can use it to query, insert, update, and delete data.
+User: What’s a basic example?
+AI: A basic query is:
+SELECT * FROM customers WHERE country = 'USA';
+It retrieves all customers from the USA.
+User: What are tables in SQL?
+AI: Tables are like spreadsheets. Each table has rows (records) and columns (fields).
+User: Do I need to learn normalization?
+AI: Yes, it's important for designing efficient databases. It helps reduce redundancy and ensures data integrity.
+User: Where can I practice SQL?
+AI: Try platforms like SQLZoo, LeetCode (SQL section), or Mode Analytics' SQL tutorials.
+User: Thanks! That helps a lot.
+AI: You're welcome! Practice regularly and you’ll improve quickly.
+
