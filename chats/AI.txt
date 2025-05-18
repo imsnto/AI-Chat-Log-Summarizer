@@ -1,0 +1,12 @@
+User: Hi there!
+AI: Hi! What would you like to know today?
+User: I keep hearing about AI. What exactly is artificial intelligence?
+AI: Artificial Intelligence, or AI, is the field of computer science that aims to create machines that mimic human intelligence. This includes learning, reasoning, problem-solving, perception, and language understanding.
+User: Is that the same as machine learning?
+AI: Machine learning is a subset of AI. It refers to algorithms that improve automatically through experience. Think of it as a way AI learns from data.
+User: How does it learn from data?
+AI: By identifying patterns in the data. For example, if you show an algorithm many pictures of cats and dogs, it can learn features that distinguish them and use those to classify new images.
+User: That’s cool. Are neural networks part of this?
+AI: Yes! Neural networks are a specific type of machine learning model, inspired by the human brain. They're great at tasks like image recognition and natural language processing.
+User: So AI is everywhere now?
+AI: Pretty much! From voice assistants to recommendation engines, AI is part of our daily lives—even in things like email spam filters and fraud detection systems.

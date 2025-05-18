@@ -1,0 +1,10 @@
+User: Hello AI. Can Python be used for automation?
+AI: Absolutely! Python is great for automating tasks like file handling, web scraping, sending emails, and even interacting with APIs.
+User: How do I automate a task that runs daily?
+AI: You can write a Python script and schedule it using tools like cron on Linux or Task Scheduler on Windows.
+User: Can you give me an example task?
+AI: Sure! You could write a script that downloads daily weather data from an API and saves it to a CSV file.
+User: That sounds useful.
+AI: It really is! Automation saves time and reduces human error.
+User: I’ll try writing a script today.
+AI: Awesome! I’m here if you need help along the way.

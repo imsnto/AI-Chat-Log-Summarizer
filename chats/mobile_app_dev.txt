@@ -1,0 +1,12 @@
+User: Hi, I want to create a mobile app.
+AI: That’s exciting! Do you want to develop for Android, iOS, or both?
+User: Both would be great.
+AI: Then consider using cross-platform frameworks like Flutter or React Native. They let you build apps for both platforms from a single codebase.
+User: Which one is better?
+AI: Flutter, developed by Google, uses Dart and is great for high-performance UI. React Native, by Facebook, uses JavaScript and has a large community.
+User: Do I need to know native development?
+AI: Not at first. But knowing native Android (Java/Kotlin) or iOS (Swift) can help for complex features.
+User: Can I publish apps on Google Play and App Store myself?
+AI: Yes! You’ll need developer accounts. Google Play has a one-time fee, while the App Store requires an annual subscription.
+User: Thanks for the info!
+AI: Anytime! Let me know if you’d like starter templates.
