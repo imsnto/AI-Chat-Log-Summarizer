@@ -1,11 +1,30 @@
+import os
 
-class FileReader:
+class ChatHandler:
     def __init__(self):
         self.user_messages = []
         self.ai_messages = []
         self.chat_history = []
 
+    @property
+    def ai_message_count(self):
+        return len(self.ai_messages)
+
+    @property
+    def user_message_count(self):
+        return len(self.user_messages)
+
+    @property
+    def total_message_count(self):
+        return self.ai_message_count + self.user_message_count
+
     def __call__(self, path=None):
+
+        if not path or not isinstance(path, str):
+            raise ValueError("Invalid path: Path must be a non-empty string.")
+        if not os.path.isfile(path):
+            raise FileNotFoundError(f"File not found: {path}")
+
         with open(path, mode='r', encoding='utf-8') as file:
             is_user = True
             for line in file:
