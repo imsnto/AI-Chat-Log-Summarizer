@@ -110,6 +110,8 @@ AI-Chat-Log-Summarizer/
 
 ![pythonChat](docs/python_chat.png)
 
+
 **Response**
+
 ![pythonResponse](docs/python_response.png)
 
