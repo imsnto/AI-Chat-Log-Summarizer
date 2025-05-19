@@ -99,16 +99,17 @@ AI-Chat-Log-Summarizer/
 
 **Sample-2**
 
-![BlockChainChat](docs/cyber_chat.png) 
+![cyberChat](docs/cyber_chat.png) 
 
 **Response**
 
-![BlockChainResponse](docs/cyber_response.png)
+![cyberResponse](docs/cyber_response.png)
 
 **Sample-3**
 
-![BlockChainChat](docs/python_automation_chat.png)
+
+![pythonChat](docs/python_chat.png)
 
 **Response**
+![pythonResponse](docs/python_response.png)
 
-![BlockChainResponse](docs/python_automation_response.png)
