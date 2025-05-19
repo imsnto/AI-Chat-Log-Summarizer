@@ -65,8 +65,13 @@ AI-Chat-Log-Summarizer/
     FOLDER_PATH=../chats
     ```
    - Adjust paths as needed.
+4. **Download checkpoint and extract**
+    ```bash
+   https://drive.google.com/file/d/1-2Y8rjt6pF44q1FqyuQvzYkv-mdDaE4Z/view?usp=drive_link
+   ```
+   extract the zip file and copy all the files to this folder `src/finetune/checkpoint-510/`.
 
-4. **Prepare Data**:
+5. **Prepare Data**:
    - Place chat logs (e.g., `chat.txt`) in `AI-Chat-Log-Summarizer/chats/`. Sample format:
      ```
      User: Hello!
