@@ -2,14 +2,13 @@ import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 from src.settings import settings
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+checkpoint = settings.checkpoint_path
+model = T5ForConditionalGeneration.from_pretrained(checkpoint).to(device)
+tokenizer = (T5Tokenizer.from_pretrained(checkpoint))
+
 def get_conversation_topic(conversation):
     try:
-        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-        checkpoint = settings.checkpoint_path
-        model = T5ForConditionalGeneration.from_pretrained(checkpoint).to(device)
-        tokenizer = (T5Tokenizer.from_pretrained(checkpoint))
-
         encoding = tokenizer(
             conversation,
             max_length=512,
