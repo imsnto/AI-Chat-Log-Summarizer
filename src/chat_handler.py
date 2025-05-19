@@ -50,3 +50,14 @@ class ChatHandler:
                         self.ai_messages[-1] += " " + line[:-1]
                         self.chat_history[-1]['message'] += " " + line[:-1]
         return self
+
+    def message_statistics(self):
+        print("==============Count Messages==============")
+        print(f"AI message count: {self.ai_message_count}")
+        print(f"User message count: {self.user_message_count}")
+        print(f"Total message count: {self.total_message_count}")
+
+        print("===============Messages=====================")
+        print(f"User Messages: {self.user_messages}")
+        print(f"AI Messages: {self.ai_messages}")
+        print(f"Chat history: {self.chat_history}")
