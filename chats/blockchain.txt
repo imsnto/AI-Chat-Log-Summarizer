@@ -1,2 +1,8 @@
-User: Can you explain what blockchain technology is and how it works in simple terms? I keep hearing about it with cryptocurrencies, but I don’t get the details.
-AI: Blockchain is a decentralized digital ledger that records transactions across many computers securely. Think of it as a chain of blocks, where each block contains a list of transactions. These blocks are linked using cryptography, ensuring they can’t be altered without changing all subsequent blocks. For cryptocurrencies like Bitcoin, when you send money, the transaction is verified by a network of computers (nodes) through consensus, added to a block, and then added to the blockchain. It’s transparent, secure, and doesn’t rely on a central authority like a bank.
+User: Can you explain what blockchain technology is and how it works in simple terms?
+I keep hearing about it with cryptocurrencies, but I don’t get the details.
+AI: Blockchain is a decentralized digital ledger that records transactions across many computers securely.
+Think of it as a chain of blocks, where each block contains a list of transactions.
+These blocks are linked using cryptography, ensuring they can’t be altered without changing all subsequent blocks.
+For cryptocurrencies like Bitcoin, when you send money, the transaction is verified by a network of computers (nodes)
+through consensus, added to a block, and then added to the blockchain. It’s transparent, secure, and doesn’t rely on
+a central authority like a bank.

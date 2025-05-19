@@ -1,9 +1,11 @@
 User: Hey AI, how can I stay safe online?
 AI: Great question! Start with strong passwords, enable two-factor authentication (2FA), and avoid clicking on suspicious links.
 User: What’s 2FA?
-AI: Two-Factor Authentication adds a second layer of security by requiring a one-time code along with your password—usually sent to your phone or email.
+AI: Two-Factor Authentication adds a second layer of security by requiring a one-time code along with your password—usually sent to your
+phone or email.
 User: What about phishing?
-AI: Phishing is a scam where attackers trick you into revealing sensitive information. Be cautious of unexpected emails or messages asking for credentials.
+AI: Phishing is a scam where attackers trick you into revealing sensitive information. Be cautious of unexpected emails or messages asking for
+credentials.
 User: Should I use antivirus software?
 AI: Yes, especially on Windows. Keep your operating system and software updated, and use a reliable antivirus tool.
 User: Is public Wi-Fi dangerous?

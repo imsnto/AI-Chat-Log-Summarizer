@@ -1,5 +1,6 @@
 import os
 from src import ChatHandler, settings
+import time
 
 def main():
     folder_path = settings.folder_path
