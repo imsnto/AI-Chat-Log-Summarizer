@@ -1,4 +1,7 @@
 import os
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+
+from src.finetune import get_conversation_topic
 
 class ChatHandler:
     def __init__(self):
@@ -52,12 +55,41 @@ class ChatHandler:
         return self
 
     def message_statistics(self):
-        print("==============Count Messages==============")
-        print(f"AI message count: {self.ai_message_count}")
-        print(f"User message count: {self.user_message_count}")
-        print(f"Total message count: {self.total_message_count}")
+        return {
+            "ai_message_count": self.ai_message_count,
+            "user_message_count": self.user_message_count,
+            "total_message_count": self.total_message_count
+        }
 
-        print("===============Messages=====================")
-        print(f"User Messages: {self.user_messages}")
-        print(f"AI Messages: {self.ai_messages}")
-        print(f"Chat history: {self.chat_history}")
+    def extract_keywords(self, top_n=5):
+        messages = [dt['message'] for dt in self.chat_history]
+
+        vectorizer = TfidfVectorizer(stop_words='english')
+        # vectorizer = CountVectorizer(stop_words='english')
+        vectors = vectorizer.fit_transform(messages)
+
+        feature_names = vectorizer.get_feature_names_out()
+        sums = vectors.sum(axis=0)
+
+        tfidf_scores = [(feature_names[i], sums[0, i]) for i in range(len(feature_names))]
+        sorted_scores = sorted(tfidf_scores, key=lambda x: x[1], reverse=True)
+
+        return [kw for kw, score in sorted_scores[:top_n]]
+
+    def topic_of_conversation(self):
+        conversation = ""
+        for msg in self.chat_history:
+            conversation += msg['role'] + " : " + msg['message'] + "\n"
+        response = get_conversation_topic(conversation)
+        return response
+
+    def summary(self):
+        topic = self.topic_of_conversation()
+        common_keywords_list = self.extract_keywords()
+        common_kw = ", ".join(common_keywords_list)
+
+        print(f"Summary: \n"
+              f"- The conversation had {self.total_message_count} exchanges.\n"
+              f"- {topic}\n"
+              f"- Most common keywords: {common_kw}.\n")
+

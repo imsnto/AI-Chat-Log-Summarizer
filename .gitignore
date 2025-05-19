@@ -1,3 +1,5 @@
+src/finetune/checkpoint-510/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

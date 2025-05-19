@@ -1,15 +1,17 @@
-from src import ChatHandler, extract_keywords
-
+import os
+from src import ChatHandler, settings
 
 def main():
-    path = r'../chats/sql.txt'
-    ch = ChatHandler()(path)
-    ch.message_statistics()
+    folder_path = settings.folder_path
+    for filename in os.listdir(folder_path):
+        if not filename.endswith(settings.valid_extensions):
+            continue
 
-    top_5_keywords = extract_keywords(ch.chat_history)
+        file_path = os.path.join(folder_path, filename)
+        ch = ChatHandler()(file_path)
 
-    print(top_5_keywords)
-
+        print(f"========={filename}============")
+        ch.summary()
 
 if __name__ == '__main__':
     main()
